@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    <!-- Page Title -->
+    <title> 你熬夜了吗？</title>
+    <!-- Bundle -->
+    <link rel="stylesheet" href="static/css/bundle.min.css">
+    <!-- Plugin Css -->
+    <link href="static/css/LineIcons.min.css" rel="stylesheet">
+    <link href="static/css/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="static/css/owl.carousel.min.css" rel="stylesheet">
+    <link href="static/css/wow.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/cubeportfolio.min.css">
+    <link href="static/css/line-awesome.min.css" rel="stylesheet">
+    <!-- Style Sheet -->
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="static/css/custom.css" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="static/js/bundle.min.js"></script>
+    <!-- Plugin Js -->
+    <script src="static/js/jquery.appear.js"></script>
+    <script src="static/js/jquery.fancybox.min.js"></script>
+    <script src="static/js/owl.carousel.min.js"></script>
+    <script src="static/js/wow.min.js"></script>
+    <script src="static/js/jquery.cubeportfolio.min.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="static/js/contact_us.js"></script>
+    <script src="static/js/script.js"></script>
+    <!-- ECHARTS JS -->
+    <script src="static/js/echarts.min.js"></script>
+    <script src="static/js/purple-passion.js"></script>
+    <script src="static/js/vintage.js"></script>
+    <script src="static/js/jquery.js"></script>
+</head>
+
+<!-- Start 头部 -->
+<header>
+    <!--Navigation（导航）-->
+    <nav class="navbar navbar-top-default navbar-expand-lg navbar-simple nav-line">
+        <a href="javascript:void(0)" class="sidemenu_btn" id="sidemenu_toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class="container-fluid">
+            <!--Nav Links(导航链接)-->
+            <div class="collapse navbar-collapse " id="megaone">
+                <div class="navbar-nav mr-auto">
+                  <a class="nav-link scroll" href="index.html">首页</a>
+                  <a class="nav-link scroll" href="第2部分.html">2200亿</a>
+                  <a class="nav-link scroll" href="第3部分.html">卡塔尔</a>
+                  <a class="nav-link scroll" href="第4部分.html">世界杯</a>
+                </div>
+            </div>
+    </nav>
+</header>
+<!-- End 头部 -->
+
+
+
+
+</body>
+</html>
+
+
+<!-- Start 第2部分 -->
+<section id="第2部分" style="height:800px;background-color: rgba(217, 235, 243, 0.744);">
+    <h1 style="font-size:50px;font-style:oblique;color:rgb(206, 25, 43);position: absolute;left: 50px;top:100px">卡塔尔为筹备世界杯花费了2200亿美元</h1>
+    <p style="font-size:20px;color:rgb(43, 43, 43);position: absolute;left: 50px;top:200px;right: 50px;">本次调研范围覆盖了卡塔尔各个领域，不仅局限于球场的建设，而是覆盖了卡塔尔的工业，服务业，交通，旅游，宣传、基础设施建设和城市建造的各个领域，可以说是为了蘸点醋包了整盘饺子。</p>
+    <!-- 准备盒子 -->
+    <div id="main" style="height:700px;position: relative;top:90px"></div>
+  <script>
+    // 初始化实例对象
+    var myChart = echarts.init(document.getElementById('main'));
+    // 指定图表的配置项和数据
+    var option = {
+      title: {
+        text: '卡塔尔花费的领域及金钱情况',
+        top:200,left:60,
+        textStyle:{fontSize:20,},
+        subtext:'本次调研范围覆盖了卡塔尔各个领域，不仅局限于球场的建设，而是覆盖了卡塔尔的工业，服务业，交通，旅游，宣传、基础设施建设和城市建造的各个领域，从数据来看，卢塞尔城建造花费最多，其次是交通运输和人工岛较多，反而是足球方面花费较少',
+        subtextStyle: {fontSize: 15,width: 180,lineHeight: 25,
+        rich: { "<style_name>": {}},
+        color: "rgb(43, 43, 43)",
+        overflow: "break"
+          }
+      },
+      tooltip: {
+         trigger: 'axis',
+         axisPointer: {type: 'shadow'}
+          },
+      legend: {top:80,right:120},
+      toolbox: {
+        show: true,
+        bottom:25,right:120,
+        
+    },
+      grid: {top:150,left: 400,right: 100,bottom: 100},
+      series: [
+    {
+      name: 'Nightingale Chart',
+      type: 'pie',
+      radius: [50, 200],
+      center: ['50%', '50%'],
+      roseType: 'area',
+      itemStyle: {
+        borderRadius: 8
+      },
+      data: [
+        { value: 2.2, name: '代言' },
+        { value: 65, name: '足球场' },
+        { value: 450, name: '卢塞尔城' },
+        { value: 360, name: '地铁' },
+        { value: 160, name: '哈马德国际机场' },
+        { value: 200, name: '酒店' },
+        { value: 500, name: '人工度假岛' },
+        { value: 400, name: '购物中心' }
+      ]
+    }
+  ]
+    };
+    // 使用刚指定的配置项和数据显示图表。
+    myChart.setOption(option);
+    // 图表自适应
+    window.addEventListener("resize",function() {
+    mychart.resize();
+    });
+  </script>
+</section>
+<!-- End 第2部分 -->
+
+
+</body>
+</html>
